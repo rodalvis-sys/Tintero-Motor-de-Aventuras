@@ -1,0 +1,48 @@
+{
+  "name": "Tintero - Motor de Aventuras",
+  "short_name": "Tintero",
+  "description": "Motor de aventuras de ficción interactiva: editor de historias y reproductor para jugar sin conexión.",
+  "lang": "es",
+  "start_url": "./index.html?origen=pwa",
+  "scope": "./",
+  "id": "tintero-motor-aventuras",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1e2130",
+  "background_color": "#0e1015",
+  "categories": ["games", "entertainment", "productivity"],
+  "icons": [
+    {
+      "src": "Imagen/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Imagen/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Imagen/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Editor de Historias",
+      "short_name": "Editor",
+      "url": "./Tintero%20-%20motor_aventuras.html",
+      "icons": [{ "src": "Imagen/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Reproductor de Aventuras",
+      "short_name": "Reproductor",
+      "url": "./Tintero%20-%20reproductor_aventuras.html",
+      "icons": [{ "src": "Imagen/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

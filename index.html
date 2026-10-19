@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/rodalvis-sys/Motor-de-Aventuras@345d154a4e2ec669dbf5b638966e812ad3a67bb6/Imagen/tintero-logo.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1e2130">
+  <meta name="application-name" content="Tintero">
+  <link rel="shortcut icon" href="Imagen/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="Imagen/apple-touch-icon.png">
   <title>Tintero - Motor de Aventuras de Ficción Interactiva</title>
   
   <style>
@@ -339,5 +343,12 @@
     </p>
   </footer>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').catch(function(){});
+      });
+    }
+  </script>
 </body>
 </html>

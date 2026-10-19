@@ -1,5 +1,8 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/rodalvis-sys/Motor-de-Aventuras@main/Imagen/tintero-logo.png" type="image/png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1e2130">
+  <link rel="shortcut icon" href="Imagen/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="Imagen/apple-touch-icon.png">
 <title>Tintero - Motor de Aventuras</title><style>
 :root{color-scheme:dark;--bg:#0e1015;--p:#171a22;--q:#1f2430;--t:#d8dce6;--m:#8a92a6;--a:#e0a84a;--g:#4ec27a;--r:#e05a5a}
 *{box-sizing:border-box}html,body{height:100%;margin:0}body{background:var(--bg);color:var(--t);font:15px/1.5 system-ui,sans-serif;display:flex;flex-direction:column}
@@ -1314,4 +1317,11 @@ else if(a=='ren'){let r=raw(),x=r.find(x=>x.id==id),n;if(x)UI.prompt('Nombre de 
 else if(a=='del')UI.confirm('¿Borrar esta partida guardada? La configuración del proyecto no se verá afectada.').then(ok=>{if(!ok)return;put(raw().filter(x=>x.id!=id));
 if(S&&S.slot==id){S=null;$('#log').innerHTML='';$('#bars').innerHTML='';let c=$('#map');c.getContext('2d').clearRect(0,0,c.width,c.height);add('Partida borrada. Carga otra desde ☰ o pulsa ↺ Nueva partida.','w');document.querySelectorAll('.v').forEach(v=>v.classList.toggle('on',v.id=='gm'));$('#menu').classList.remove('o')}ses()})};$('#dm').onclick=()=>{addP(fix(demo()));start();view('gm')};
 view('gm');
-</script></body></html>
+</script>  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').catch(function(){});
+      });
+    }
+  </script>
+</body></html>

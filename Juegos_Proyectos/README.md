@@ -1,1 +1,1 @@
-Los proyectos en esta carpetas son juegos de ficción interactiva construido en TINTERO. Puedes jugar la historia usando el reproductor y usando el motor puedes ver su construcción interna. Juguetear con los valores, si rompes algo dentro solo elimina el proyecto y vuelve a cargarlo.
+Los proyectos en estas carpetas son juegos de ficción interactiva construido en TINTERO. Puedes jugar la historia usando el reproductor y usando el motor puedes ver su construcción interna. Juguetear con los valores, si rompes algo dentro solo elimina el proyecto y vuelve a cargarlo.
